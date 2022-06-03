@@ -1,5 +1,5 @@
 name: scisplits
-description: A new Flutter project.
+description: Science based splits
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -20,49 +20,85 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.17.0 <3.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_riverpod: ^2.0.0-dev.5
+  flutter_riverpod: ^2.0.0-dev.9
   equatable: ^2.0.3
+  google_fonts: ^3.0.1
+  audioplayers: ^0.20.1
+  duration: ^3.0.11
+  uuid: ^3.0.6
+  material_color_generator: ^1.1.0
+  flutter_staggered_grid_view: ^0.6.1
+  widget_mask: ^1.0.0+0
+  image: ^3.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.2
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "assets/icon_background.png"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
 
-# The following section is specific to Flutter packages.
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+     - assets/img/hamstring01.jpeg
+     - assets/img/hamstring02.jpg
+     - assets/img/lunge01.jfif
+     - assets/img/lunge02.jpg
+     - assets/img/lunge03.jpeg
+     - assets/img/lunge04.jpeg
+     - assets/img/lunge05.webp
+     - assets/img/lunge06.jpeg
+     - assets/img/lunge07.jpeg
+     - assets/img/lunge08.jpeg
+     - assets/img/lunge09.jpeg
+     - assets/img/msplits01.jpeg
+     - assets/img/shamstring01.jpeg
+     - assets/img/shamstring02.webp
+     - assets/img/splits01.jpg
+     - assets/img/splits02.jpeg
+     - assets/img/splits03.jpeg
+     - assets/img/splits04.jpeg
+     - assets/img/splits05.jpg
+     - assets/img/splits06.jpeg
+     - assets/img/splits07.webp
+     - assets/img/splits08.jpeg
+     - assets/img/splits09.jpeg
+     - assets/img/splits10.jpeg
+     - assets/img/muscles/adductors.png
+     - assets/img/muscles/extensors.png
+     - assets/img/muscles/flexors.png
+     - assets/img/muscles/gluteal.png
+     - assets/img/muscles/hamstrings.png
+     - assets/img/muscles/peroneal.png
+     - assets/img/muscles/quadriceps.png
+     - assets/img/muscles/sartorius.png
+     - assets/img/muscles/adductors.jpg
+     - assets/img/muscles/extensors.jpg
+     - assets/img/muscles/flexors.jpg
+     - assets/img/muscles/gluteal.jpg
+     - assets/img/muscles/hamstrings.jpg
+     - assets/img/muscles/peroneal.jpg
+     - assets/img/muscles/quadriceps.jpg
+     - assets/img/muscles/sartorius.jpg
+     - assets/img/muscles/muscle_groups_grey.jpg
+     - assets/img/muscles/muscle_groups_grey.png
+     - assets/audio/countdown.wav
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
