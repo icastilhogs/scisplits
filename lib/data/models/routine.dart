@@ -23,6 +23,7 @@ class Routine {
   final String id = uuid.v4();
 
   final stopwatch = Stopwatch();
+  DateTime? timestamp;
 
   String get duration {
     int sum = 0;
@@ -97,6 +98,7 @@ class Routine {
   void cancelRoutine(BuildContext context) {
     //final elapsedTime = stopwatch.elapsed;
     stopwatch.stop();
+    timestamp = DateTime.now();
     ref.read(timerProvider.notifier).cancelTimer();
     ref.read(counterProvider.notifier).reset();
     Navigator.pushNamed(context, '/complete');

@@ -29,6 +29,8 @@ class _PlayerPageState extends ConsumerState<PlayerPage>
   @override
   void initState() {
     super.initState();
+
+    // This is done to resume player if app is in the background
     WidgetsBinding.instance.addObserver(this);
   }
 
@@ -58,7 +60,7 @@ class _PlayerPageState extends ConsumerState<PlayerPage>
     final counter = ref.watch(counterProvider);
     final image = ref.watch(imageProvider);
 
-    Exercise currentExercise = routine.currentExercise;
+    final currentExercise = routine.currentExercise;
 
     void cancelRoutine(BuildContext context) {
       if (timer.status == TimerStatus.running) {
@@ -127,6 +129,7 @@ class _PlayerPageState extends ConsumerState<PlayerPage>
             height: MediaQuery.of(context).size.height * 0.4 + 40,
             children: [
               Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
                     currentExercise.name,

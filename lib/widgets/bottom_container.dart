@@ -20,7 +20,9 @@ class BottomContainer extends StatelessWidget {
 
   List<Widget> _buildWidgets(BuildContext context) {
     final List<Widget> list = [
-      SizedBox(height: MediaQuery.of(context).size.height * 0.05)
+      const Spacer(
+        flex: 1,
+      )
     ];
     if (children != null) {
       list.addAll(children!);

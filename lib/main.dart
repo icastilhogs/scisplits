@@ -48,12 +48,6 @@ class SciSplits extends StatelessWidget {
       },
       //home: const HomePage(),
       initialRoute: '/',
-      /* routes: {
-        '/': (BuildContext context) => const HomePage(),
-        '/routine$id': (BuildContext context) => const RoutineDetailsPage(),
-        '/player': (BuildContext context) => const PlayerPage(),
-        '/complete': (BuildContext context) => const CompletePage(),
-      }, */
     );
   }
 }

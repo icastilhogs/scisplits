@@ -23,6 +23,7 @@ class CustomScaffold extends StatelessWidget {
         leading: backButton,
         automaticallyImplyLeading: false,
         toolbarHeight: 69,
+        elevation: 0,
         shadowColor: Colors.transparent,
         backgroundColor: Colors.transparent,
         actions: actions,

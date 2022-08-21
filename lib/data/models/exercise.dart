@@ -65,7 +65,8 @@ class Exercise {
     this.duration = 60,
     //this.isCompleted = false,
     this.totalSets = 3,
-    this.set = 1,
+    this.sets = 1,
+    this.elapsedTime = const Duration(seconds: 0),
   });
 
   Exercise copyWith({
@@ -73,6 +74,7 @@ class Exercise {
     Side? newLeg,
     int? newCurrentRep,
     bool? newIsCompleted,
+    Duration? elapsed,
   }) {
     return Exercise(
       id: id,
@@ -82,7 +84,8 @@ class Exercise {
       //name: name,
       totalSets: totalSets,
       side: newLeg ?? side,
-      set: newCurrentRep ?? set,
+      sets: newCurrentRep ?? sets,
+      elapsedTime: elapsed ?? elapsedTime,
     );
   }
 
@@ -93,7 +96,8 @@ class Exercise {
 
   final int totalSets;
   final Exercises type;
-  final int set;
+  final int sets;
+  final Duration elapsedTime;
 
   Map<MuscleGroup, Side> get targetMuscles {
     //final List<Map<Muscle, Side>> result = [];
@@ -102,5 +106,5 @@ class Exercise {
 
   String get name => type.name;
 
-  String get status => '${Side.left.name} leg ${set}x$totalSets';
+  String get status => '${Side.left.name} leg ${sets}x$totalSets';
 }
